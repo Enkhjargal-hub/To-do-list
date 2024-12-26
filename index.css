@@ -19,6 +19,10 @@ body{
     object-fit: cover;
 }
 
+.Photo {
+    position: relative;
+}
+
 .head-title {
     display: flex;
     justify-content: center;
@@ -26,9 +30,10 @@ body{
     color: pink;
     height: 100vh;
     font-size: 16px;
+    position: absolute;
 }
 
-.Photo .Back-photo:hover {
+.Photo .head-title:hover {
     transform: scale(1.2);
 }
 
