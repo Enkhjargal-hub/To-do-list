@@ -1,15 +1,15 @@
+/* od ni buh element noloolno */
 * {
     margin: 0;
     font-family: sans-serif;
-  }
+  }   
+
   body {
     display: flex;
     justify-content: center;
     height: 100vh;
     font-family: sans-serif;
-    /* background-color: #A9C9FF;
-    background-image: linear-gradient(150deg, #A9C9FF 0%, #FFBBEC 100%); */
-   background-image: url(./2880x1800-px-Earth-minimalism-Solar-System-Sun-1200285-wallhere.com.jpg);
+   background-image: url(./https://project-3-todo-app.vercel.app/2880x1800-px-Earth-minimalism-Solar-System-Sun-1200285-wallhere.com.jpg);
    background-size: cover;
   }
   .main-container {
@@ -25,10 +25,10 @@
   }
   @keyframes fill-animation {
     from{
-      fill: transparent;
+      fill: transparent; /* Эхлэх үед өнгө нь тунгалаг байна */
     }
     to{
-      fill: white;
+      fill: white; /* Анимацын төгсгөлд өнгө нь цагаан болно */
     }
     
   }
@@ -78,8 +78,7 @@
     }
     
   }
-  
-  
+   
   
   .container {
     margin-top: 150px;
@@ -99,7 +98,7 @@
   .title {
     display: flex;
   }
-  .box-header {
+  .box-head {
     font-size: 20px;
     padding: 8px;
   }
@@ -113,7 +112,7 @@
     margin: 8px;
     padding: 8px;
     border-radius: 6px;
-    /* width: 100%; */
+    
   
     background-color: aliceblue;
     display: flex;
@@ -132,10 +131,10 @@
   }
   .delete,
   .edit {
-    cursor: pointer;
+    cursor: pointer; /* Курсор дарахад бэлэн байгаа мэт харагдуулна */
     border-radius: 50%;
     padding: 3px;
-    height: fit-content;
+    height: fit-content; /* Элементийн өндрийг доторх контентыг багтаах хэмжээнд автоматаар тохируулна. */
   }
   .box-main-done .done {
     background-color: rgb(225, 225, 227);
@@ -173,9 +172,9 @@
   #box-button:hover {
     background-color: rgb(180, 180, 184);
   }
-  .details > h4 {
+  .details > h4 {  /* details доторх h4 загварчилж байна */
     margin-bottom: 8px;
-    word-wrap: break-word;
+    word-wrap: break-word; /* Бичсэн зүйл хэтэрхий урт байвал дараагийн мөр лүү буулгана. */
   }
   .details > p {
     margin-bottom: 8px;
@@ -264,51 +263,5 @@
   #task-id {
     display: none;
   }
-  @media only screen and (max-width: 1280px) and (min-width: 1150px) {
-    .container {
-      min-width: 1150px;
-    }
-  }
-  @media only screen and (max-width: 1150px) and (min-width: 940px) {
-    .container {
-      max-width: 1150px;
-      min-width: 940px;
-      flex-wrap: wrap;
-      height: fit-content;
-    }
-    .box {
-      width: 45%;
-    }
-    svg{
-      width: 425px;
-      height: 65px;
-    }
-  }
-  @media only screen and (max-width: 940px) and (min-width: 730px) {
-    .container {
-      max-width: 940px;
-      min-width: 730px;
-      flex-wrap: wrap;
-      height: fit-content;
-    }
-    .box {
-      width: 45%;
-    }
-    svg{
-      width: 400px;
-      height: 60px;
-    }
-  }
-  @media only screen and (max-width: 730px)  {
-    .container {
-      flex-direction: column;
-      align-items: center;
-      height: fit-content;
-    }
-    svg{
-      width: 375px;
-      height: 50px;
-    }
-  
-  }
+ 
   
