@@ -9,20 +9,23 @@
     justify-content: center;
     height: 100vh;
     font-family: sans-serif;
-   background-image: url(./https://project-3-todo-app.vercel.app/2880x1800-px-Earth-minimalism-Solar-System-Sun-1200285-wallhere.com.jpg);
+   background-image: url(/2880x1800-px-Earth-minimalism-Solar-System-Sun-1200285-wallhere.com.jpg);
    background-size: cover;
   }
+
   .main-container {
     display: flex;
     justify-content: start;
     flex-direction: column;
     align-items: center;
   }
+
   #head-title{
     margin-top: 40px;
     position: absolute;
     animation: fill-animation .5s ease forwards 2.5s;
   }
+
   @keyframes fill-animation {
     from{
       fill: transparent; /* Эхлэх үед өнгө нь тунгалаг байна */
@@ -30,8 +33,8 @@
     to{
       fill: white; /* Анимацын төгсгөлд өнгө нь цагаан болно */
     }
-    
   }
+
   #head-title path:nth-child(1){
    stroke-dasharray: 800px;
    stroke-dashoffset: 800px;
@@ -75,7 +78,7 @@
   }
 
   #head-title path:nth-child(8){
-    stroke-dasharray: 800px;
+    stroke-dasharray: 800px;  /* 800 урттай цэгэн урттай зураас */
     stroke-dashoffset: 800px;
     animation: line-animation 2s ease forwards ;
   }
@@ -139,6 +142,7 @@
     align-items: center;
     width: 16px;
   }
+
   .delete,
   .edit {
     cursor: pointer; /* Курсор дарахад бэлэн байгаа мэт харагдуулна */
@@ -146,21 +150,26 @@
     padding: 3px;
     height: fit-content; /* Элементийн өндрийг доторх контентыг багтаах хэмжээнд автоматаар тохируулна. */
   }
+
   .box-main-done .done {
     background-color: rgb(225, 225, 227);
     display: flex;
     align-items: center;
     width: 16px;
   }
+
   .done:hover {
     background-color: rgb(225, 225, 227);
   }
+
   .delete:hover {
     background-color: rgb(225, 225, 227);
   }
+
   .edit:hover {
     background-color: rgb(225, 225, 227);
   }
+
   .action {
     width: 8%;
     display: flex;
@@ -168,9 +177,11 @@
     align-items: center;
     gap: 10px;
   }
+
   .details {
     width: 74%;
   }
+
   #box-button {
     cursor: pointer;
     display: flex;
@@ -179,18 +190,22 @@
     padding: 8px;
     border-radius: 6px;
   }
+
   #box-button:hover {
     background-color: rgb(180, 180, 184);
   }
+
   .details > h4 {  /* details доторх h4 загварчилж байна */
     margin-bottom: 8px;
     word-wrap: break-word; /* Бичсэн зүйл хэтэрхий урт байвал дараагийн мөр лүү буулгана. */
   }
+
   .details > p {
     margin-bottom: 8px; /* Энэ зай нь зөвхөн тухайн элементээс доошоо биш, зөвхөн түүний дараагийн элементтэй харьцах зай юм. */
     border: border-box; /* padding болон border-ийг элементийн нийт хэмжээнд багтааж тооцдог */
     word-wrap: break-word;
   }
+
   .priority {
     width: fit-content; /* өргөн текст, зурагны өргөнтэй таарч харагдана хэт их хоосон зай үүсгэхгүй */
     padding: 4px 8px;
@@ -233,34 +248,40 @@
     justify-content: space-between;
     position: absolute;
   }
+
   #title-input {
     width: 99%;
     height: 40px;
     border-radius: 8px;
     border: 1px solid lightgrey;
   }
+
   #description-input {
     width: 99%;
     height: 90px;
     border-radius: 8px;
     border: 1px solid lightgrey;
   }
+
   #status-select {
     width: 100%;
     height: 40px;
     border-radius: 8px;
     border: 1px solid lightgrey;
   }
+
   #priority-select {
     width: 100%;
     height: 40px;
     border-radius: 8px;
     border: 1px solid lightgrey;
   }
+
   .addTask-box > select {
     width: 100%;
     height: 50px;
   }
+
   #submit > button {
     width: 100%;
     height: 40px;
@@ -269,9 +290,11 @@
     color: white;
     cursor: pointer;
   }
+
   .display-none {
     display: none;
   }
+
   #task-id {
     display: none;
   }
