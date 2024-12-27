@@ -37,48 +37,55 @@
    stroke-dashoffset: 800px;
    animation: line-animation 2s ease forwards 2.1s;
   }
+  
   #head-title path:nth-child(2){
    stroke-dasharray: 800px;
    stroke-dashoffset: 800px;
    animation: line-animation 2s ease forwards 1.8s;
   }
+
   #head-title path:nth-child(3){
     stroke-dasharray: 800px;
     stroke-dashoffset: 800px;
     animation: line-animation 2s ease forwards 1.5s;
   }
+
   #head-title path:nth-child(4){
     stroke-dasharray: 800px;
     stroke-dashoffset: 800px;
     animation: line-animation 2s ease forwards 1.2s;
   }
+
   #head-title path:nth-child(5){
     stroke-dasharray: 800px;
     stroke-dashoffset: 800px;
     animation: line-animation 2s ease forwards .9s;
   }
+
   #head-title path:nth-child(6){
     stroke-dasharray: 800px;
     stroke-dashoffset: 800px;
     animation: line-animation 2s ease forwards .6s;
   }
+
   #head-title path:nth-child(7){
     stroke-dasharray: 800px;
     stroke-dashoffset: 800px;
     animation: line-animation 2s ease forwards .3s;
   }
+
   #head-title path:nth-child(8){
     stroke-dasharray: 800px;
     stroke-dashoffset: 800px;
     animation: line-animation 2s ease forwards ;
   }
+
   @keyframes line-animation {
     to{
       stroke-dashoffset: 1;
     }
     
   }
-   
   
   .container {
     margin-top: 150px;
@@ -88,6 +95,7 @@
     height: 100vh;
     justify-content: space-between;
   }
+
   .box {
     background-color: antiquewhite;
     border-radius: 8px;
@@ -95,25 +103,27 @@
     width: 23%;
     height: fit-content;
   }
+
   .title {
     display: flex;
   }
+
   .box-head {
     font-size: 20px;
     padding: 8px;
   }
+
   .task-counter {
     padding: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .addTask {
     margin: 8px;
     padding: 8px;
     border-radius: 6px;
-    
-  
     background-color: aliceblue;
     display: flex;
     gap: 5%;
@@ -177,12 +187,12 @@
     word-wrap: break-word; /* Бичсэн зүйл хэтэрхий урт байвал дараагийн мөр лүү буулгана. */
   }
   .details > p {
-    margin-bottom: 8px;
-    border: border-box;
+    margin-bottom: 8px; /* Энэ зай нь зөвхөн тухайн элементээс доошоо биш, зөвхөн түүний дараагийн элементтэй харьцах зай юм. */
+    border: border-box; /* padding болон border-ийг элементийн нийт хэмжээнд багтааж тооцдог */
     word-wrap: break-word;
   }
   .priority {
-    width: fit-content;
+    width: fit-content; /* өргөн текст, зурагны өргөнтэй таарч харагдана хэт их хоосон зай үүсгэхгүй */
     padding: 4px 8px;
     border-radius: 8px;
     border: 1px solid black;
@@ -198,24 +208,26 @@
     z-index: 0;
     justify-content: center;
     align-items: center;
-    /* display: flex; */
   }
+
   .hide {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 1;
   }
+
   .flex {
     display: flex;
   }
+
   .addTask-box {
     background-color: bisque;
     width: 400px;
     height: 500px;
-    padding: 15px !important;
+    padding: 15px !important; /* Энийг заавал дагаж мөрдөнө */
     border-radius: 8px;
-    z-index: 2;
+    z-index: 2; /* элементийн дэлгэцэн дээрх бусад элементүүдтэй харьцах өндөрлөгийг заадаг. */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
